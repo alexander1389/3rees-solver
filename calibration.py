@@ -420,7 +420,6 @@ class Calibrator:
         print('Taking a screenshot of the entire screen...')
         full_screen = self.get_screenshot(filename='01_full_screen.png')
 
-        full_screen = cv2.imread('./game_over_20251016_122012.png')
         if not self.manual_calibration(full_screen):
             print('Region calibration error!')
             return False
